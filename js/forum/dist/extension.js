@@ -16,11 +16,11 @@ System.register('sijad/spoiler/alert/main', ['flarum/extend', 'flarum/components
 
       app.initializers.add('sijad-spoiler-alert', function (app) {
         extend(Post.prototype, 'config', function (original, isInitialized) {
-          this.$('span.spoiler').spoiler();
+          this.$('.spoiler').spoiler();
         });
         extend(s9e.TextFormatter, 'preview', function (original, text, target) {
           var filter = 'blur(8px)';
-          $(target).find('span.spoiler').css({
+          $(target).find('.spoiler').css({
             WebkitFilter: filter,
             filter: filter
           });

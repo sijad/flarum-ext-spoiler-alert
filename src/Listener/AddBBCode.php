@@ -27,7 +27,7 @@ class AddBBCode
 
         $event->configurator->BBCodes->addCustom(
             '[SPOILER]{TEXT}[/SPOILER]',
-            '<span class="spoiler">{TEXT}</span>'
+            '<div class="spoiler">{TEXT}</div>'
         );
     }
 }
